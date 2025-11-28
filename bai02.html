@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 02: TODO Matrix</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left-col">
+            <img src="images/avatar.jpg" alt="Avatar" class="avatar">
+            <h2>Họ Tên: Phạm Nguyễn Quốc Huy</h2>
+            <p>MSSV: 221A011093</p>
+        </div>
+        <div class="right-col">
+            <h1>Task Board</h1>
+            <input type="text" id="task-name" placeholder="Tên công việc">
+            <select id="priority">
+                <option value="1">1: Quan trọng & Khẩn cấp</option>
+                <option value="2">2: Quan trọng - Không khẩn cấp</option>
+                <option value="3">3: Không quan trọng - Khẩn cấp</option>
+                <option value="4">4: Không quan trọng - Không khẩn cấp</option>
+            </select>
+            <button id="add-task">Thêm</button>
+
+            <div class="matrix">
+                <div class="box" id="box1"><h3>Quan trọng & Khẩn cấp</h3></div>
+                <div class="box" id="box2"><h3>Quan trọng - Không khẩn cấp</h3></div>
+                <div class="box" id="box3"><h3>Không quan trọng - Khẩn cấp</h3></div>
+                <div class="box" id="box4"><h3>Không quan trọng - Không khẩn cấp</h3></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

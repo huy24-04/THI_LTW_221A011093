@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 01: Booking System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <h1>Chọn Ghế Rạp Chiếu Phim</h1>
+    <div id="seat-grid"></div>
+    <p>Số ghế đang chọn: <span id="selected-count">0</span></p>
+    <p>Tổng tiền: <span id="total-price">0</span> VND</p>
+    <button id="pay-btn">Thanh Toán Ngay</button>
+
+    <!-- Modal -->
+    <div id="modal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:white; padding:20px; border:1px solid black;">
+        <h2>Tóm Tắt Vé</h2>
+        <p id="summary"></p>
+        <button onclick="document.getElementById('modal').style.display='none'">Đóng</button>
+    </div>
+    <div class="screen">MÀN HÌNH CHIẾU PHIM</div>  
+</body>
+</html>

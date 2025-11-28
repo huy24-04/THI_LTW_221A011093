@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lý Thuyết</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>câu 1. Phân biệt display: none, visibility: hidden và opacity: 0 về mặt hiển thị và tương tác sự kiện.
+        Thuộc tính display: none sẽ làm phần tử biến mất hoàn toàn khỏi trang web, không hiển thị và cũng không chiếm bất kỳ không gian nào trong layout, đồng thời người dùng không thể tương tác với nó. Trong khi đó, visibility: hidden cũng làm phần tử không hiển thị, nhưng khác ở chỗ nó vẫn giữ lại không gian vốn có trên trang, chỉ là bị ẩn đi và cũng không thể nhận các sự kiện như click. Riêng opacity: 0 khiến phần tử trở nên trong suốt hoàn toàn, tức là không nhìn thấy nhưng vẫn giữ nguyên vị trí và kích thước trong layout, và đặc biệt là phần tử vẫn có thể tương tác được như bình thường (vẫn nhận click, hover…). Vì vậy, opacity: 0 chỉ ẩn về mặt hiển thị chứ không ẩn về mặt sự kiện.
+        
+        Câu 2 (1đ): Trình bày quy trình trỏ Domain về Hosting thông qua Nameserver và thông qua A Record. Cách nào cập nhật nhanh hơn?
+        Khi trỏ domain về hosting bằng Nameserver, bạn sẽ thay toàn bộ hệ thống DNS của domain bằng DNS của nhà cung cấp hosting. Quy trình gồm việc lấy hai hoặc nhiều tên Nameserver từ hosting, sau đó vào trang quản lý domain và thay đổi Nameserver. Sau khi cập nhật, mọi bản ghi như A, CNAME, MX… sẽ được quản lý trực tiếp trong DNS của hosting. Cách thứ hai là trỏ bằng A Record, nghĩa là bạn giữ nguyên DNS của domain tại nhà đăng ký, nhưng chỉ cập nhật bản ghi A trỏ tên miền về địa chỉ IP của hosting. Cách này đơn giản và linh hoạt hơn vì bạn chỉ sửa một hoặc vài bản ghi mà không thay đổi toàn bộ hệ thống DNS. Về tốc độ cập nhật, A Record thường nhanh hơn Nameserver, chỉ mất khoảng vài phút, trong khi Nameserver có thể mất đến vài giờ hoặc hơn để cập nhật hoàn toàn.
+        
+        Câu 3 (1đ - JS Async): Viết lại hàm sau sử dụng
+        async/await thay vì Promise.then.
+        
+        async function getData() {
+          try {
+            const res = await fetch('https://api.example.com/data');
+            const data = await res.json();
+            console.log(data);
+          } catch (err) {
+            console.error(err);
+          }
+        }
+        </h1>
+  
+</body>
+</html>
